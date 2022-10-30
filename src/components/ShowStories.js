@@ -1,7 +1,7 @@
 
 import useDataFetcher from '../hooks/useDataFetcher'
 import Story from './Story';
-
+// 默认值是/top
 const ShowStories = ({ type }) => {
   const { isLoading, stories } = useDataFetcher(type? type : 'new');
 
@@ -13,8 +13,8 @@ const ShowStories = ({ type }) => {
   console.log(stories);
   return (
     <>
-      {stories.map(story =>
-        <Story key={story.id} story={story}/>
+      {stories && stories.map(story =>
+        <Story key={story.id} story={story} />
       ) }
     </>
   )

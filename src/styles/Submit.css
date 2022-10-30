@@ -1,0 +1,25 @@
+.submitNewsForm {
+  width: 70%;
+  margin: auto;
+  padding:20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.oneLineInput, .multiLinesInput {
+  width: 100%;
+  margin: 10px;
+}
+
+.oneLineInput {
+  height: 30px;
+}
+
+.submitBtn {
+  width: 10%;
+}

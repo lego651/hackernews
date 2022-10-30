@@ -9,8 +9,9 @@ const LandingPage = () => {
     <Router>
       <Header />
       <Routes>
-        <Route path="/top" element={<ShowStories type={'top'} />} />
+        <Route path="/" element={<ShowStories />} />
         <Route path="/new" element={<ShowStories type={'new'} />} />
+        <Route path="/top" element={<ShowStories type={'top'} />} />
         <Route path="/submit" element={<Submit />} />
       </Routes>
     </Router>
